@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F7187D2A2432828D00DAA8FB /* ZenCoreGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = F7187D282432828D00DAA8FB /* ZenCoreGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7187D322432859C00DAA8FB /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
+		F7E50E6C2432B29C00318E34 /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
+		F7E50E6D2432B29D00318E34 /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
+		F7E50E6E2432B29E00318E34 /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,10 +19,34 @@
 		F7187D282432828D00DAA8FB /* ZenCoreGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenCoreGraphics.h; sourceTree = "<group>"; };
 		F7187D292432828D00DAA8FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Initialization.swift"; sourceTree = "<group>"; };
+		F7E50E3D2432B16700318E34 /* ZenCoreGraphics_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenCoreGraphics_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E50E4A2432B18C00318E34 /* ZenCoreGraphics_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenCoreGraphics_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E50E642432B1B900318E34 /* ZenCoreGraphics_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenCoreGraphics_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F7187D222432828D00DAA8FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E3A2432B16700318E34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E472432B18C00318E34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E612432B1B900318E34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				F7187D252432828D00DAA8FB /* ZenCoreGraphics_iOS.framework */,
+				F7E50E3D2432B16700318E34 /* ZenCoreGraphics_macOS.framework */,
+				F7E50E4A2432B18C00318E34 /* ZenCoreGraphics_tvOS.framework */,
+				F7E50E642432B1B900318E34 /* ZenCoreGraphics_watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +128,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7E50E382432B16700318E34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E452432B18C00318E34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E5F2432B1B900318E34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +170,60 @@
 			productReference = F7187D252432828D00DAA8FB /* ZenCoreGraphics_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F7E50E3C2432B16700318E34 /* ZenCoreGraphics-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E50E422432B16700318E34 /* Build configuration list for PBXNativeTarget "ZenCoreGraphics-macOS" */;
+			buildPhases = (
+				F7E50E382432B16700318E34 /* Headers */,
+				F7E50E392432B16700318E34 /* Sources */,
+				F7E50E3A2432B16700318E34 /* Frameworks */,
+				F7E50E3B2432B16700318E34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZenCoreGraphics-macOS";
+			productName = "ZenCoreGraphics-macOS";
+			productReference = F7E50E3D2432B16700318E34 /* ZenCoreGraphics_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7E50E492432B18C00318E34 /* ZenCoreGraphics-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E50E4F2432B18C00318E34 /* Build configuration list for PBXNativeTarget "ZenCoreGraphics-tvOS" */;
+			buildPhases = (
+				F7E50E452432B18C00318E34 /* Headers */,
+				F7E50E462432B18C00318E34 /* Sources */,
+				F7E50E472432B18C00318E34 /* Frameworks */,
+				F7E50E482432B18C00318E34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZenCoreGraphics-tvOS";
+			productName = "ZenCoreGraphics-tvOS";
+			productReference = F7E50E4A2432B18C00318E34 /* ZenCoreGraphics_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7E50E632432B1B900318E34 /* ZenCoreGraphics-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E50E692432B1B900318E34 /* Build configuration list for PBXNativeTarget "ZenCoreGraphics-watchOS" */;
+			buildPhases = (
+				F7E50E5F2432B1B900318E34 /* Headers */,
+				F7E50E602432B1B900318E34 /* Sources */,
+				F7E50E612432B1B900318E34 /* Frameworks */,
+				F7E50E622432B1B900318E34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZenCoreGraphics-watchOS";
+			productName = "ZenCoreGraphics-watchOS";
+			productReference = F7E50E642432B1B900318E34 /* ZenCoreGraphics_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -131,6 +236,15 @@
 					F7187D242432828D00DAA8FB = {
 						CreatedOnToolsVersion = 11.4;
 						LastSwiftMigration = 1140;
+					};
+					F7E50E3C2432B16700318E34 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					F7E50E492432B18C00318E34 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					F7E50E632432B1B900318E34 = {
+						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
@@ -148,12 +262,36 @@
 			projectRoot = "";
 			targets = (
 				F7187D242432828D00DAA8FB /* ZenCoreGraphics-iOS */,
+				F7E50E3C2432B16700318E34 /* ZenCoreGraphics-macOS */,
+				F7E50E492432B18C00318E34 /* ZenCoreGraphics-tvOS */,
+				F7E50E632432B1B900318E34 /* ZenCoreGraphics-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F7187D232432828D00DAA8FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E3B2432B16700318E34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E482432B18C00318E34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E622432B1B900318E34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -168,6 +306,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7187D322432859C00DAA8FB /* CGRect+Initialization.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E392432B16700318E34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E50E6C2432B29C00318E34 /* CGRect+Initialization.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E462432B18C00318E34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E50E6D2432B29D00318E34 /* CGRect+Initialization.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E50E602432B1B900318E34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E50E6E2432B29E00318E34 /* CGRect+Initialization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7CK9FQY54K;
@@ -311,7 +474,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Nebula.ZenCoreGraphics;
+				PRODUCT_BUNDLE_IDENTIFIER = ZenCoreGraphics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -324,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7CK9FQY54K;
@@ -337,11 +501,171 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Nebula.ZenCoreGraphics;
+				PRODUCT_BUNDLE_IDENTIFIER = ZenCoreGraphics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7E50E432432B16700318E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7CK9FQY54K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZenCoreGraphics/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZenCoreGraphics-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F7E50E442432B16700318E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7CK9FQY54K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZenCoreGraphics/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZenCoreGraphics-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F7E50E502432B18C00318E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7CK9FQY54K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZenCoreGraphics/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ZenCoreGraphics-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Debug;
+		};
+		F7E50E512432B18C00318E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7CK9FQY54K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZenCoreGraphics/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ZenCoreGraphics-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Release;
+		};
+		F7E50E6A2432B1B900318E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7CK9FQY54K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZenCoreGraphics/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ZenCoreGraphics-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		F7E50E6B2432B1B900318E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7CK9FQY54K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZenCoreGraphics/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ZenCoreGraphics-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
 			};
 			name = Release;
 		};
@@ -362,6 +686,33 @@
 			buildConfigurations = (
 				F7187D2E2432828D00DAA8FB /* Debug */,
 				F7187D2F2432828D00DAA8FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E50E422432B16700318E34 /* Build configuration list for PBXNativeTarget "ZenCoreGraphics-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E50E432432B16700318E34 /* Debug */,
+				F7E50E442432B16700318E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E50E4F2432B18C00318E34 /* Build configuration list for PBXNativeTarget "ZenCoreGraphics-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E50E502432B18C00318E34 /* Debug */,
+				F7E50E512432B18C00318E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E50E692432B1B900318E34 /* Build configuration list for PBXNativeTarget "ZenCoreGraphics-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E50E6A2432B1B900318E34 /* Debug */,
+				F7E50E6B2432B1B900318E34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
