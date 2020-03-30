@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F7187D2A2432828D00DAA8FB /* ZenCoreGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = F7187D282432828D00DAA8FB /* ZenCoreGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7187D322432859C00DAA8FB /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7187D252432828D00DAA8FB /* ZenCoreGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenCoreGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7187D282432828D00DAA8FB /* ZenCoreGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenCoreGraphics.h; sourceTree = "<group>"; };
 		F7187D292432828D00DAA8FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Initialization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		F7187D272432828D00DAA8FB /* ZenCoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				F7187D33243285AA00DAA8FB /* SourceCode */,
 				F7187D302432831A00DAA8FB /* SupportingFiles */,
 			);
 			path = ZenCoreGraphics;
@@ -58,6 +61,30 @@
 				F7187D292432828D00DAA8FB /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F7187D33243285AA00DAA8FB /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				F7187D34243285AF00DAA8FB /* Extensions */,
+			);
+			path = SourceCode;
+			sourceTree = "<group>";
+		};
+		F7187D34243285AF00DAA8FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7187D35243286E000DAA8FB /* Rect */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7187D35243286E000DAA8FB /* Rect */ = {
+			isa = PBXGroup;
+			children = (
+				F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */,
+			);
+			path = Rect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +130,7 @@
 				TargetAttributes = {
 					F7187D242432828D00DAA8FB = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -139,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7187D322432859C00DAA8FB /* CGRect+Initialization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +297,7 @@
 		F7187D2E2432828D00DAA8FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7CK9FQY54K;
@@ -284,6 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Nebula.ZenCoreGraphics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -292,6 +323,7 @@
 		F7187D2F2432828D00DAA8FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7CK9FQY54K;
