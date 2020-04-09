@@ -13,6 +13,17 @@ public func +=(lhs: inout CGPoint, rhs: CGPoint) {
 	lhs = lhs + rhs
 }
 
+public func +(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
+	CGPoint(
+		x: lhs.x + rhs,
+		y: lhs.y + rhs
+	)
+}
+
+public func +=(lhs: inout CGPoint, rhs: CGFloat) {
+	lhs = lhs + rhs
+}
+
 // MARK: - Subtraction
 
 public func -(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
@@ -23,6 +34,17 @@ public func -(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
 }
 
 public func -=(lhs: inout CGPoint, rhs: CGPoint) {
+	lhs = lhs - rhs
+}
+
+public func -(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
+	CGPoint(
+		x: lhs.x - rhs,
+		y: lhs.y - rhs
+	)
+}
+
+public func -=(lhs: inout CGPoint, rhs: CGFloat) {
 	lhs = lhs - rhs
 }
 
@@ -39,6 +61,17 @@ public func *=(lhs: inout CGPoint, rhs: CGPoint) {
 	lhs = lhs * rhs
 }
 
+public func *(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
+	CGPoint(
+		x: lhs.x * rhs,
+		y: lhs.y * rhs
+	)
+}
+
+public func *=(lhs: inout CGPoint, rhs: CGFloat) {
+	lhs = lhs * rhs
+}
+
 // MARK: - Division
 
 public func /(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
@@ -49,5 +82,16 @@ public func /(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
 }
 
 public func /=(lhs: inout CGPoint, rhs: CGPoint) {
-	lhs = lhs * rhs
+	lhs = lhs / rhs
+}
+
+public func /(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
+	CGPoint(
+		x: lhs.x / rhs,
+		y: lhs.y / rhs
+	)
+}
+
+public func /=(lhs: inout CGPoint, rhs: CGFloat) {
+	lhs = lhs / rhs
 }
