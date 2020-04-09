@@ -23,11 +23,11 @@ public extension CGRect {
 	Creates a rectangle with the given size and zero origin.
 	- parameter size: The size of the new rectangle
 	*/
-    init(size: CGSize) {
-        self.init(
-            origin: .zero,
-            size: size
-        )
-    }
+	init(size: CGSize) {
+		self.init(
+			origin: .zero,
+			size: size
+		)
+	}
 	
 }
