@@ -169,12 +169,7 @@
 		F7187D34243285AF00DAA8FB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F7CCD4E5243FDA040016D215 /* Float */,
-				F7187D35243286E000DAA8FB /* Rect */,
-				F7CCD4B5243FBF4F0016D215 /* Point */,
-				F7CCD4AA243FBDD20016D215 /* Size */,
-				F7CCD4BB243FD14A0016D215 /* Vector */,
-				F7CCD4DF243FD9470016D215 /* Path */,
+				F7CCD4ED243FDEF10016D215 /* CoreGraphics */,
 				F7CCD4EC243FDE7B0016D215 /* Swift */,
 			);
 			path = Extensions;
@@ -249,6 +244,19 @@
 				F7CCD4EB243FDE750016D215 /* Array */,
 			);
 			path = Swift;
+			sourceTree = "<group>";
+		};
+		F7CCD4ED243FDEF10016D215 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				F7CCD4E5243FDA040016D215 /* Float */,
+				F7187D35243286E000DAA8FB /* Rect */,
+				F7CCD4B5243FBF4F0016D215 /* Point */,
+				F7CCD4AA243FBDD20016D215 /* Size */,
+				F7CCD4BB243FD14A0016D215 /* Vector */,
+				F7CCD4DF243FD9470016D215 /* Path */,
+			);
+			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
