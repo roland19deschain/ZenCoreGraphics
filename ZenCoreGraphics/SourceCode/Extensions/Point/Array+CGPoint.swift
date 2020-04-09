@@ -2,6 +2,41 @@ import CoreGraphics
 
 public extension Array where Element == CGPoint {
 	
+	enum CircularMotionDirection {
+		case clockwise
+		case counterClockwise
+		case collinear
+	}
+
+	var circularMotionDirection: CircularMotionDirection {
+		guard count > 1 else {
+			return .collinear
+		}
+		
+		var map: [CGFloat] = []
+		
+		for current in self {
+			if let next = next(current) {
+				map.append(
+					(next.x - current.x) * (next.y + current.y)
+				)
+			} else if let first = first {
+				map.append(
+					(first.x - current.x) * (first.y + current.y)
+				)
+			}
+		}
+		
+		switch map.reduce(1, +) {
+		case let sum where sum < 0:
+			return .clockwise
+		case let sum where sum > 0:
+			return .counterClockwise
+		default:
+			return .collinear
+		}
+	}
+	
 	/// Returns a Boolean value indicating whether the receiver contains a
 	/// specified point. Equality is checked with specified accuracy.
 	func contains(

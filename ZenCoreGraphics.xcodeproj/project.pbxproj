@@ -49,6 +49,18 @@
 		F7CCD4D7243FD7C40016D215 /* Array+CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4D5243FD7C40016D215 /* Array+CGPoint.swift */; };
 		F7CCD4D8243FD7C40016D215 /* Array+CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4D5243FD7C40016D215 /* Array+CGPoint.swift */; };
 		F7CCD4D9243FD7C40016D215 /* Array+CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4D5243FD7C40016D215 /* Array+CGPoint.swift */; };
+		F7CCD4DB243FD9440016D215 /* CGPath+Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4DA243FD9440016D215 /* CGPath+Elements.swift */; };
+		F7CCD4DC243FD9440016D215 /* CGPath+Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4DA243FD9440016D215 /* CGPath+Elements.swift */; };
+		F7CCD4DD243FD9440016D215 /* CGPath+Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4DA243FD9440016D215 /* CGPath+Elements.swift */; };
+		F7CCD4DE243FD9440016D215 /* CGPath+Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4DA243FD9440016D215 /* CGPath+Elements.swift */; };
+		F7CCD4E1243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4E0243FD9FD0016D215 /* CGFloat+Computation.swift */; };
+		F7CCD4E2243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4E0243FD9FD0016D215 /* CGFloat+Computation.swift */; };
+		F7CCD4E3243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4E0243FD9FD0016D215 /* CGFloat+Computation.swift */; };
+		F7CCD4E4243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4E0243FD9FD0016D215 /* CGFloat+Computation.swift */; };
+		F7CCD4E7243FDDF70016D215 /* Array+NextPrevious.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4E6243FDDF70016D215 /* Array+NextPrevious.swift */; };
+		F7CCD4E8243FDDF70016D215 /* Array+NextPrevious.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4E6243FDDF70016D215 /* Array+NextPrevious.swift */; };
+		F7CCD4E9243FDDF70016D215 /* Array+NextPrevious.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4E6243FDDF70016D215 /* Array+NextPrevious.swift */; };
+		F7CCD4EA243FDDF70016D215 /* Array+NextPrevious.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4E6243FDDF70016D215 /* Array+NextPrevious.swift */; };
 		F7E50E6C2432B29C00318E34 /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
 		F7E50E6D2432B29D00318E34 /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
 		F7E50E6E2432B29E00318E34 /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
@@ -69,6 +81,9 @@
 		F7CCD4CB243FD3F90016D215 /* CGVector+MathOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGVector+MathOperations.swift"; sourceTree = "<group>"; };
 		F7CCD4D0243FD6D30016D215 /* CGPoint+Computation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Computation.swift"; sourceTree = "<group>"; };
 		F7CCD4D5243FD7C40016D215 /* Array+CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+CGPoint.swift"; sourceTree = "<group>"; };
+		F7CCD4DA243FD9440016D215 /* CGPath+Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+Elements.swift"; sourceTree = "<group>"; };
+		F7CCD4E0243FD9FD0016D215 /* CGFloat+Computation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Computation.swift"; sourceTree = "<group>"; };
+		F7CCD4E6243FDDF70016D215 /* Array+NextPrevious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+NextPrevious.swift"; sourceTree = "<group>"; };
 		F7E50E3D2432B16700318E34 /* ZenCoreGraphics_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenCoreGraphics_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E50E4A2432B18C00318E34 /* ZenCoreGraphics_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenCoreGraphics_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E50E642432B1B900318E34 /* ZenCoreGraphics_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenCoreGraphics_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,10 +169,13 @@
 		F7187D34243285AF00DAA8FB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F7CCD4E5243FDA040016D215 /* Float */,
 				F7187D35243286E000DAA8FB /* Rect */,
 				F7CCD4B5243FBF4F0016D215 /* Point */,
 				F7CCD4AA243FBDD20016D215 /* Size */,
 				F7CCD4BB243FD14A0016D215 /* Vector */,
+				F7CCD4DF243FD9470016D215 /* Path */,
+				F7CCD4EC243FDE7B0016D215 /* Swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +217,38 @@
 				F7CCD4CB243FD3F90016D215 /* CGVector+MathOperations.swift */,
 			);
 			path = Vector;
+			sourceTree = "<group>";
+		};
+		F7CCD4DF243FD9470016D215 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				F7CCD4DA243FD9440016D215 /* CGPath+Elements.swift */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		F7CCD4E5243FDA040016D215 /* Float */ = {
+			isa = PBXGroup;
+			children = (
+				F7CCD4E0243FD9FD0016D215 /* CGFloat+Computation.swift */,
+			);
+			path = Float;
+			sourceTree = "<group>";
+		};
+		F7CCD4EB243FDE750016D215 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				F7CCD4E6243FDDF70016D215 /* Array+NextPrevious.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		F7CCD4EC243FDE7B0016D215 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				F7CCD4EB243FDE750016D215 /* Array */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,12 +444,15 @@
 				F7CCD4B7243FD1400016D215 /* CGVector+Initialization.swift in Sources */,
 				F7187D322432859C00DAA8FB /* CGRect+Initialization.swift in Sources */,
 				F7CCD4A6243FBDC40016D215 /* CGSize+Introspection.swift in Sources */,
+				F7CCD4E1243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */,
 				F7CCD4A1243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */,
+				F7CCD4DB243FD9440016D215 /* CGPath+Elements.swift in Sources */,
 				F7CCD4D1243FD6D30016D215 /* CGPoint+Computation.swift in Sources */,
 				F7CCD4CC243FD3F90016D215 /* CGVector+MathOperations.swift in Sources */,
 				F7CCD4C2243FD2AC0016D215 /* CGVector+Computation.swift in Sources */,
 				F7CCD4D6243FD7C40016D215 /* Array+CGPoint.swift in Sources */,
 				F7CCD4C7243FD3060016D215 /* CGVector+Mutating.swift in Sources */,
+				F7CCD4E7243FDDF70016D215 /* Array+NextPrevious.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,12 +465,15 @@
 				F7CCD4B8243FD1400016D215 /* CGVector+Initialization.swift in Sources */,
 				F7E50E6C2432B29C00318E34 /* CGRect+Initialization.swift in Sources */,
 				F7CCD4A7243FBDC40016D215 /* CGSize+Introspection.swift in Sources */,
+				F7CCD4E2243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */,
 				F7CCD4A2243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */,
+				F7CCD4DC243FD9440016D215 /* CGPath+Elements.swift in Sources */,
 				F7CCD4D2243FD6D30016D215 /* CGPoint+Computation.swift in Sources */,
 				F7CCD4CD243FD3F90016D215 /* CGVector+MathOperations.swift in Sources */,
 				F7CCD4C3243FD2AC0016D215 /* CGVector+Computation.swift in Sources */,
 				F7CCD4D7243FD7C40016D215 /* Array+CGPoint.swift in Sources */,
 				F7CCD4C8243FD3060016D215 /* CGVector+Mutating.swift in Sources */,
+				F7CCD4E8243FDDF70016D215 /* Array+NextPrevious.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,12 +486,15 @@
 				F7CCD4B9243FD1400016D215 /* CGVector+Initialization.swift in Sources */,
 				F7E50E6D2432B29D00318E34 /* CGRect+Initialization.swift in Sources */,
 				F7CCD4A8243FBDC40016D215 /* CGSize+Introspection.swift in Sources */,
+				F7CCD4E3243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */,
 				F7CCD4A3243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */,
+				F7CCD4DD243FD9440016D215 /* CGPath+Elements.swift in Sources */,
 				F7CCD4D3243FD6D30016D215 /* CGPoint+Computation.swift in Sources */,
 				F7CCD4CE243FD3F90016D215 /* CGVector+MathOperations.swift in Sources */,
 				F7CCD4C4243FD2AC0016D215 /* CGVector+Computation.swift in Sources */,
 				F7CCD4D8243FD7C40016D215 /* Array+CGPoint.swift in Sources */,
 				F7CCD4C9243FD3060016D215 /* CGVector+Mutating.swift in Sources */,
+				F7CCD4E9243FDDF70016D215 /* Array+NextPrevious.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,12 +507,15 @@
 				F7CCD4BA243FD1400016D215 /* CGVector+Initialization.swift in Sources */,
 				F7E50E6E2432B29E00318E34 /* CGRect+Initialization.swift in Sources */,
 				F7CCD4A9243FBDC40016D215 /* CGSize+Introspection.swift in Sources */,
+				F7CCD4E4243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */,
 				F7CCD4A4243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */,
+				F7CCD4DE243FD9440016D215 /* CGPath+Elements.swift in Sources */,
 				F7CCD4D4243FD6D30016D215 /* CGPoint+Computation.swift in Sources */,
 				F7CCD4CF243FD3F90016D215 /* CGVector+MathOperations.swift in Sources */,
 				F7CCD4C5243FD2AC0016D215 /* CGVector+Computation.swift in Sources */,
 				F7CCD4D9243FD7C40016D215 /* Array+CGPoint.swift in Sources */,
 				F7CCD4CA243FD3060016D215 /* CGVector+Mutating.swift in Sources */,
+				F7CCD4EA243FDDF70016D215 /* Array+NextPrevious.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
