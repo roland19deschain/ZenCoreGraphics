@@ -3,9 +3,9 @@ import CoreGraphics
 // MARK: - Addition
 
 /**
-Adds the value to both width and height of the produced size.
-- parameter lhs: The size to change.
-- parameter rhs: The value to add.
+Adds the value to both *width* and *height* of the produced size.
+- parameter lhs: The size.
+- parameter rhs: The value to add to `lhs`.
 */
 public func +(lhs: CGSize, rhs: CGFloat) -> CGSize {
 	CGSize(
@@ -15,9 +15,9 @@ public func +(lhs: CGSize, rhs: CGFloat) -> CGSize {
 }
 
 /**
-Adds the value to both width and height of the size and stores the result in the left-hand-side variable.
-- parameter lhs: The size to change.
-- parameter rhs: The value to add.
+Adds the value to both *width* and *height* of the size and stores the result in the left-hand-side variable.
+- parameter lhs: The size.
+- parameter rhs: The value to add to `lhs`.
 */
 public func +=(lhs: inout CGSize, rhs: CGFloat) {
 	lhs = lhs + rhs
@@ -26,9 +26,9 @@ public func +=(lhs: inout CGSize, rhs: CGFloat) {
 // MARK: - Subtraction
 
 /**
-Subtracts the value from both width and height of the produced size.
-- parameter lhs: The size to change.
-- parameter rhs: The value to subtract.
+Subtracts the value from both *width* and *height* of the produced size.
+- parameter lhs: The size.
+- parameter rhs: The value to subtract from `lhs`.
 */
 public func -(lhs: CGSize, rhs: CGFloat) -> CGSize {
 	CGSize(
@@ -38,9 +38,9 @@ public func -(lhs: CGSize, rhs: CGFloat) -> CGSize {
 }
 
 /**
-Subtracts the value from both width and height of the size and stores the result in the left-hand-side variable.
-- parameter lhs: The size to change.
-- parameter rhs: The value to subtract.
+Subtracts the value from both *width* and *height* of the size and stores the result in the left-hand-side variable.
+- parameter lhs: The size.
+- parameter rhs: The value to subtract from `lhs`.
 */
 public func -=(lhs: inout CGSize, rhs: CGFloat) {
 	lhs = lhs - rhs
@@ -49,9 +49,9 @@ public func -=(lhs: inout CGSize, rhs: CGFloat) {
 // MARK: - Multiplication
 
 /**
-Multiplies both width and height of the produced size to the value.
-- parameter lhs: The size to change.
-- parameter rhs: The value to multiply.
+Multiplies both *width* and *height* of the produced size to the value.
+- parameter lhs: The size.
+- parameter rhs: The value to multiply `lhs`.
 */
 public func *(lhs: CGSize, rhs: CGFloat) -> CGSize {
 	CGSize(
@@ -61,9 +61,9 @@ public func *(lhs: CGSize, rhs: CGFloat) -> CGSize {
 }
 
 /**
-Multiplies both width and height of the size to the value and stores the result in the left-hand-side variable.
-- parameter lhs: The size to change.
-- parameter rhs: The value to multiply.
+Multiplies both *width* and *height* of the size to the value and stores the result in the left-hand-side variable.
+- parameter lhs: The size.
+- parameter rhs: The value to multiply `lhs`.
 */
 public func *=(lhs: inout CGSize, rhs: CGFloat) {
 	lhs = lhs * rhs
@@ -72,9 +72,9 @@ public func *=(lhs: inout CGSize, rhs: CGFloat) {
 // MARK: - Division
 
 /**
-Divides both width and height of the produced size by the value.
-- parameter lhs: The size to change.
-- parameter rhs: The value to divide the size by.
+Divides both *width* and *height* of the produced size by the value.
+- parameter lhs: The size.
+- parameter rhs: The value to divide `lhs` by.
 */
 public func /(lhs: CGSize, rhs: CGFloat) -> CGSize {
 	CGSize(
@@ -84,9 +84,9 @@ public func /(lhs: CGSize, rhs: CGFloat) -> CGSize {
 }
 
 /**
-Divides both width and height of the size by the value and stores the result in the left-hand-side variable.
-- parameter lhs: The size to change.
-- parameter rhs: The value to divide the size by.
+Divides both *width* and *height* of the size by the value and stores the result in the left-hand-side variable.
+- parameter lhs: The size.
+- parameter rhs: The value to divide `lhs` by.
 */
 public func /=(lhs: inout CGSize, rhs: CGFloat) {
 	lhs = lhs / rhs

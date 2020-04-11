@@ -2,12 +2,21 @@ import CoreGraphics
 
 public extension Array where Element == CGPoint {
 	
+	/// Two-dimensional rotation can occur in two possible directions.
+	/// A clockwise motion is one that proceeds in the same direction as a clock's hands:
+	/// from the top to the right, then down and then to the left, and back up to the top.
+	/// The opposite sense of rotation or revolution isncounterclockwise.
+	/// Collinearity of a set of points is the property of their lying on a single line.
 	enum CircularMotionDirection {
+		/// From the top to the right, then down and then to the left, and back up to the top.
 		case clockwise
+		/// The opposite sense of rotation or revolution is counterclockwise.
 		case counterClockwise
+		/// Collinearity of a set of points is the property of their lying on a single line.
 		case collinear
 	}
 
+	/// Returns the direction of circular motion of an array of points.
 	var circularMotionDirection: CircularMotionDirection {
 		guard count > 1 else {
 			return .collinear

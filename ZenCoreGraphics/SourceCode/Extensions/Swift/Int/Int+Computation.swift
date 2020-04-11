@@ -1,15 +1,15 @@
 import CoreGraphics
 
-public extension CGFloat {
+public extension Int {
 	
 	/// Returns receiver value converted to radians.
 	var radians: CGFloat {
-		self * .pi / 180
+		CGFloat(self) * .pi / 180
 	}
 	
 	/// Returns receiver value converted to degrees.
 	var degrees: CGFloat {
-		self * 180 / .pi
+		CGFloat(self) * 180 / .pi
 	}
 	
 }

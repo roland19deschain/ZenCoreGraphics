@@ -64,6 +64,10 @@
 		F7E50E6C2432B29C00318E34 /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
 		F7E50E6D2432B29D00318E34 /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
 		F7E50E6E2432B29E00318E34 /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
+		F7E6330024423F7C004C3F1F /* Int+Computation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E632FF24423F7C004C3F1F /* Int+Computation.swift */; };
+		F7E6330124423F7C004C3F1F /* Int+Computation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E632FF24423F7C004C3F1F /* Int+Computation.swift */; };
+		F7E6330224423F7C004C3F1F /* Int+Computation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E632FF24423F7C004C3F1F /* Int+Computation.swift */; };
+		F7E6330324423F7C004C3F1F /* Int+Computation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E632FF24423F7C004C3F1F /* Int+Computation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +91,7 @@
 		F7E50E3D2432B16700318E34 /* ZenCoreGraphics_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenCoreGraphics_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E50E4A2432B18C00318E34 /* ZenCoreGraphics_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenCoreGraphics_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E50E642432B1B900318E34 /* ZenCoreGraphics_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenCoreGraphics_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E632FF24423F7C004C3F1F /* Int+Computation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Computation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +246,7 @@
 		F7CCD4EC243FDE7B0016D215 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				F7E6330424423F88004C3F1F /* Int */,
 				F7CCD4EB243FDE750016D215 /* Array */,
 			);
 			path = Swift;
@@ -257,6 +263,14 @@
 				F7CCD4DF243FD9470016D215 /* Path */,
 			);
 			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		F7E6330424423F88004C3F1F /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				F7E632FF24423F7C004C3F1F /* Int+Computation.swift */,
+			);
+			path = Int;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +463,7 @@
 			files = (
 				F7CCD4B1243FBF4B0016D215 /* CGPoint+MathOperations.swift in Sources */,
 				F7CCD4AC243FBEBB0016D215 /* CGSize+MathOperations.swift in Sources */,
+				F7E6330024423F7C004C3F1F /* Int+Computation.swift in Sources */,
 				F7CCD4B7243FD1400016D215 /* CGVector+Initialization.swift in Sources */,
 				F7187D322432859C00DAA8FB /* CGRect+Initialization.swift in Sources */,
 				F7CCD4A6243FBDC40016D215 /* CGSize+Introspection.swift in Sources */,
@@ -470,6 +485,7 @@
 			files = (
 				F7CCD4B2243FBF4B0016D215 /* CGPoint+MathOperations.swift in Sources */,
 				F7CCD4AD243FBEBB0016D215 /* CGSize+MathOperations.swift in Sources */,
+				F7E6330124423F7C004C3F1F /* Int+Computation.swift in Sources */,
 				F7CCD4B8243FD1400016D215 /* CGVector+Initialization.swift in Sources */,
 				F7E50E6C2432B29C00318E34 /* CGRect+Initialization.swift in Sources */,
 				F7CCD4A7243FBDC40016D215 /* CGSize+Introspection.swift in Sources */,
@@ -491,6 +507,7 @@
 			files = (
 				F7CCD4B3243FBF4B0016D215 /* CGPoint+MathOperations.swift in Sources */,
 				F7CCD4AE243FBEBB0016D215 /* CGSize+MathOperations.swift in Sources */,
+				F7E6330224423F7C004C3F1F /* Int+Computation.swift in Sources */,
 				F7CCD4B9243FD1400016D215 /* CGVector+Initialization.swift in Sources */,
 				F7E50E6D2432B29D00318E34 /* CGRect+Initialization.swift in Sources */,
 				F7CCD4A8243FBDC40016D215 /* CGSize+Introspection.swift in Sources */,
@@ -512,6 +529,7 @@
 			files = (
 				F7CCD4B4243FBF4B0016D215 /* CGPoint+MathOperations.swift in Sources */,
 				F7CCD4AF243FBEBB0016D215 /* CGSize+MathOperations.swift in Sources */,
+				F7E6330324423F7C004C3F1F /* Int+Computation.swift in Sources */,
 				F7CCD4BA243FD1400016D215 /* CGVector+Initialization.swift in Sources */,
 				F7E50E6E2432B29E00318E34 /* CGRect+Initialization.swift in Sources */,
 				F7CCD4A9243FBDC40016D215 /* CGSize+Introspection.swift in Sources */,
