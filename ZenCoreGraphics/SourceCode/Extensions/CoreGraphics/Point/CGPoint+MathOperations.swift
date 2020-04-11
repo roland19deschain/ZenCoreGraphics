@@ -3,7 +3,7 @@ import CoreGraphics
 // MARK: - Addition
 
 /**
-Adds two points and produces a point that is their sum.
+Adds two points and produces a point which is their sum.
 - parameter lhs: The first point to add.
 - parameter rhs: The second point to add.
 */
@@ -15,7 +15,7 @@ public func +(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
 }
 
 /**
-Adds two points, produces a point that is their sum and stores the result in the left-hand-side variable.
+Adds two points, produces a point which is their sum and stores the result in the left-hand-side variable.
 - parameter lhs: The first point to add.
 - parameter rhs: The second point to add.
 */
@@ -90,6 +90,11 @@ public func -=(lhs: inout CGPoint, rhs: CGFloat) {
 
 // MARK: - Multiplication
 
+/**
+Multiplies two points and produces a point which is their product.
+- parameter lhs: The first value to multiply.
+- parameter rhs: The second value to multiply.
+*/
 public func *(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
 	CGPoint(
 		x: lhs.x * rhs.x,
@@ -97,10 +102,20 @@ public func *(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
 	)
 }
 
+/**
+Multiplies two points, produces a point which is their product and stores the result in the left-hand-side variable.
+- parameter lhs: The first value to multiply.
+- parameter rhs: The second value to multiply.
+*/
 public func *=(lhs: inout CGPoint, rhs: CGPoint) {
 	lhs = lhs * rhs
 }
 
+/**
+Multiplies both *x* and *y* of the produced point to the value.
+- parameter lhs: The point.
+- parameter rhs: The value to multiplу `lhs`.
+*/
 public func *(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
 	CGPoint(
 		x: lhs.x * rhs,
@@ -108,6 +123,11 @@ public func *(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
 	)
 }
 
+/**
+Multiplies both *x* and *y* of the produced point to the value and stores the result in the left-hand-side variable.
+- parameter lhs: The point.
+- parameter rhs: The value to multiplу `lhs`.
+*/
 public func *=(lhs: inout CGPoint, rhs: CGFloat) {
 	lhs = lhs * rhs
 }
