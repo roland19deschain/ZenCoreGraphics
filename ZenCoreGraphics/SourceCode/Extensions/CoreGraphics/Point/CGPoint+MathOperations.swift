@@ -134,6 +134,11 @@ public func *=(lhs: inout CGPoint, rhs: CGFloat) {
 
 // MARK: - Division
 
+/**
+Returns the point where *x* and *y* are quotient of dividing the first point *x* and *y*  by the second point *x* and *y* respectively, rounded to a representable value.
+- parameter lhs: The point to divide.
+- parameter rhs: The point to divide `lhs` by.
+*/
 public func /(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
 	CGPoint(
 		x: lhs.x / rhs.x,
@@ -141,10 +146,20 @@ public func /(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
 	)
 }
 
+/**
+Divide the first point *x* and *y*  by the second point *x* and *y* respectively and stores the result in the left-hand-side variable.
+- parameter lhs: The point to divide.
+- parameter rhs: The point to divide `lhs` by.
+*/
 public func /=(lhs: inout CGPoint, rhs: CGPoint) {
 	lhs = lhs / rhs
 }
 
+/**
+Divides both *x* and *y* of the produced point by the value.
+- parameter lhs: The point.
+- parameter rhs: The value to divide `lhs` by.
+*/
 public func /(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
 	CGPoint(
 		x: lhs.x / rhs,
@@ -152,6 +167,11 @@ public func /(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
 	)
 }
 
+/**
+Divides both *x* and *y* of the produced point by the value and stores the result in the left-hand-side variable.
+- parameter lhs: The point.
+- parameter rhs: The value to divide `lhs` by.
+*/
 public func /=(lhs: inout CGPoint, rhs: CGFloat) {
 	lhs = lhs / rhs
 }
