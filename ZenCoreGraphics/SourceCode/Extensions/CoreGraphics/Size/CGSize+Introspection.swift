@@ -2,13 +2,18 @@ import CoreGraphics
 
 public extension CGSize {
 	
-	/// Returns the maximum side (width or height).
-	var maxSide: CGFloat {
+	/// Returns the aspect ratio.
+	var aspectRatio: CGFloat {
+		height == 0 ? 0 : width / height
+	}
+	
+	/// Returns width or height, whichever is the bigger value.
+	var maxDimension: CGFloat {
 		max(width, height)
 	}
 	
-	/// Returns the minimal side (width or height).
-	var minSide: CGFloat {
+	/// Returns width or height, whichever is the smaller value.
+	var minDimension: CGFloat {
 		min(width, height)
 	}
 	
