@@ -24,5 +24,6 @@ let package = Package(
 			dependencies: [],
 			path: "ZenCoreGraphics/SourceCode/"
 		)
-	]
+	],
+	swiftLanguageVersions: [.v5]
 )
