@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F7187D2A2432828D00DAA8FB /* ZenCoreGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = F7187D282432828D00DAA8FB /* ZenCoreGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7187D322432859C00DAA8FB /* CGRect+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */; };
+		F7A02CEE2742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A02CED2742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift */; };
+		F7A02CEF2742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A02CED2742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift */; };
+		F7A02CF02742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A02CED2742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift */; };
+		F7A02CF12742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A02CED2742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift */; };
 		F7CCD4A1243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4A0243FBC6D0016D215 /* CGRect+Introspection.swift */; };
 		F7CCD4A2243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4A0243FBC6D0016D215 /* CGRect+Introspection.swift */; };
 		F7CCD4A3243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCD4A0243FBC6D0016D215 /* CGRect+Introspection.swift */; };
@@ -79,6 +83,7 @@
 		F7187D282432828D00DAA8FB /* ZenCoreGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenCoreGraphics.h; sourceTree = "<group>"; };
 		F7187D292432828D00DAA8FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7187D312432859C00DAA8FB /* CGRect+Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Initialization.swift"; sourceTree = "<group>"; };
+		F7A02CED2742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Convenience.swift"; sourceTree = "<group>"; };
 		F7CCD4A0243FBC6D0016D215 /* CGRect+Introspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Introspection.swift"; sourceTree = "<group>"; };
 		F7CCD4A5243FBDC40016D215 /* CGSize+Introspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Introspection.swift"; sourceTree = "<group>"; };
 		F7CCD4AB243FBEBA0016D215 /* CGSize+MathOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+MathOperations.swift"; sourceTree = "<group>"; };
@@ -195,6 +200,14 @@
 			path = Rect;
 			sourceTree = "<group>";
 		};
+		F7A02CF22742ABAC00BEA9F0 /* AffineTransform */ = {
+			isa = PBXGroup;
+			children = (
+				F7A02CED2742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift */,
+			);
+			path = AffineTransform;
+			sourceTree = "<group>";
+		};
 		F7CCD4AA243FBDD20016D215 /* Size */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +280,7 @@
 				F7CCD4AA243FBDD20016D215 /* Size */,
 				F7CCD4BB243FD14A0016D215 /* Vector */,
 				F7CCD4DF243FD9470016D215 /* Path */,
+				F7A02CF22742ABAC00BEA9F0 /* AffineTransform */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -476,6 +490,7 @@
 				F7CCD4E1243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */,
 				F7CCD4A1243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */,
 				F7CCD4DB243FD9440016D215 /* CGPath+Elements.swift in Sources */,
+				F7A02CEE2742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift in Sources */,
 				F7E0F1A626643A7B00D85208 /* CGRect+Computation.swift in Sources */,
 				F7CCD4D1243FD6D30016D215 /* CGPoint+Computation.swift in Sources */,
 				F7CCD4CC243FD3F90016D215 /* CGVector+MathOperations.swift in Sources */,
@@ -499,6 +514,7 @@
 				F7CCD4E2243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */,
 				F7CCD4A2243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */,
 				F7CCD4DC243FD9440016D215 /* CGPath+Elements.swift in Sources */,
+				F7A02CEF2742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift in Sources */,
 				F7E0F1A726643A7B00D85208 /* CGRect+Computation.swift in Sources */,
 				F7CCD4D2243FD6D30016D215 /* CGPoint+Computation.swift in Sources */,
 				F7CCD4CD243FD3F90016D215 /* CGVector+MathOperations.swift in Sources */,
@@ -522,6 +538,7 @@
 				F7CCD4E3243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */,
 				F7CCD4A3243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */,
 				F7CCD4DD243FD9440016D215 /* CGPath+Elements.swift in Sources */,
+				F7A02CF02742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift in Sources */,
 				F7E0F1A826643A7B00D85208 /* CGRect+Computation.swift in Sources */,
 				F7CCD4D3243FD6D30016D215 /* CGPoint+Computation.swift in Sources */,
 				F7CCD4CE243FD3F90016D215 /* CGVector+MathOperations.swift in Sources */,
@@ -545,6 +562,7 @@
 				F7CCD4E4243FD9FD0016D215 /* CGFloat+Computation.swift in Sources */,
 				F7CCD4A4243FBC6D0016D215 /* CGRect+Introspection.swift in Sources */,
 				F7CCD4DE243FD9440016D215 /* CGPath+Elements.swift in Sources */,
+				F7A02CF12742AB8100BEA9F0 /* CGAffineTransform+Convenience.swift in Sources */,
 				F7E0F1A926643A7B00D85208 /* CGRect+Computation.swift in Sources */,
 				F7CCD4D4243FD6D30016D215 /* CGPoint+Computation.swift in Sources */,
 				F7CCD4CF243FD3F90016D215 /* CGVector+MathOperations.swift in Sources */,
