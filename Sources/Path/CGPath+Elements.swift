@@ -63,18 +63,18 @@ public extension CGPath {
 	typealias Body = @convention(block) (CGPathElement) -> Void
 	
 	/**
-	Applies a closure to each element of the graphics path and sends an element (*CGPathElement*) to it as an argument.
-	- parameter body: The closure to be executed on  each element in a graphics path.
-	*/
+	 Applies a closure to each element of the graphics path and sends an element (*CGPathElement*) to it as an argument.
+	 - parameter body: The closure to be executed on  each element in a graphics path.
+	 */
 	func forEach(
 		body: @escaping Body
 	) {
 		let callback: @convention(c) (
 			UnsafeMutableRawPointer,
 			UnsafePointer<CGPathElement>
-			) -> Void = { info, element in
-				let body = unsafeBitCast(info, to: Body.self)
-				body(element.pointee)
+		) -> Void = { info, element in
+			let body = unsafeBitCast(info, to: Body.self)
+			body(element.pointee)
 		}
 		
 		apply(

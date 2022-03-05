@@ -16,7 +16,7 @@ public extension Array where Element == CGPoint {
 		/// Collinearity of a set of points is the property of their lying on a single line.
 		case collinear
 	}
-
+	
 	/// Returns the direction of circular motion of an array of points.
 	var circularMotionDirection: CircularMotionDirection {
 		guard count > 1 else {
@@ -57,7 +57,7 @@ public extension Array where Element == CGPoint {
 			if current.isEqual(
 				to: point,
 				accuracy: accuracy
-				) {
+			) {
 				return true
 			}
 		}

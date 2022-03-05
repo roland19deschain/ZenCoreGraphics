@@ -19,7 +19,7 @@ public extension CGPoint {
 		accuracy: CGFloat
 	) -> Bool {
 		abs(x - point.x) < accuracy
-			&& abs(y - point.y) < accuracy
+		&& abs(y - point.y) < accuracy
 	}
 	
 }
