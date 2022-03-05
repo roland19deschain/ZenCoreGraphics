@@ -1,13 +1,13 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 
 import PackageDescription
 
 let package = Package(
 	name: "ZenCoreGraphics",
 	platforms: [
-		.macOS(.v10_10),
 		.iOS(.v12),
 		.tvOS(.v12),
+		.macOS(.v10_10),
 		.watchOS(.v2)
 	],
 	products: [
@@ -15,14 +15,21 @@ let package = Package(
 			name: "ZenCoreGraphics",
 			type: .static,
 			targets: ["ZenCoreGraphics"]
-		)
+		),
 	],
-	dependencies: [],
+	dependencies: [
+		 .package(url: "https://github.com/roland19deschain/ZenSwift.git", from: "1.8.1"),
+	],
 	targets: [
 		.target(
 			name: "ZenCoreGraphics",
-			dependencies: [],
-			path: "ZenCoreGraphics/SourceCode/"
+			dependencies: [
+				.product(name: "ZenSwift", package: "zenswift")
+			]
+		),
+		.testTarget(
+			name: "ZenCoreGraphicsTests",
+			dependencies: ["ZenCoreGraphics"]
 		)
 	],
 	swiftLanguageVersions: [.v5]
