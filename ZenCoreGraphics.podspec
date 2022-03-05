@@ -18,4 +18,3 @@ ZenCoreGraphics is a collection of convenient and concise extensions and functio
   spec.source_files     = 'Sources/**/*{swift}'
   spec.dependency 'ZenSwift'
 end
-g
