@@ -1,4 +1,4 @@
-Pod::Spec.new do |s|
+Pod::Spec.new do |spec|
   spec.name             = 'ZenCoreGraphics'
   spec.version          = '1.2.3'
   spec.swift_version    = '5.0'
