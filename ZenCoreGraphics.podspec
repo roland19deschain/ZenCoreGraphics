@@ -1,4 +1,4 @@
-Pod::Spec.new do |spec|
+Pod::Spec.new do |s|
   spec.name             = 'ZenCoreGraphics'
   spec.version          = '1.2.3'
   spec.swift_version    = '5.0'
@@ -11,10 +11,11 @@ ZenCoreGraphics is a collection of convenient and concise extensions and functio
   spec.author           = { 'Alexey Roik' => 'roland19deschain@gmail.com' }
   spec.source           = { :git => 'https://github.com/roland19deschain/ZenCoreGraphicspec.git', :tag => spec.version }
   spec.requires_arc     = true
-  spec.iospec.deployment_target = '12.0'
+  spec.ios.deployment_target = '12.0'
   spec.osx.deployment_target = '10.10'
-  spec.tvospec.deployment_target = '12.0'
-  spec.watchospec.deployment_target = '2.0'
+  spec.tvos.deployment_target = '12.0'
+  spec.watchos.deployment_target = '2.0'
   spec.source_files     = 'Sources/**/*{swift}'
   spec.dependency 'ZenSwift'
 end
+g
