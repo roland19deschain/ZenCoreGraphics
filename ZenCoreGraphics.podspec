@@ -9,7 +9,7 @@ ZenCoreGraphics is a collection of convenient and concise extensions and functio
   spec.homepage         = 'https://github.com/roland19deschain/ZenCoreGraphics'
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
   spec.author           = { 'Alexey Roik' => 'roland19deschain@gmail.com' }
-  spec.source           = { :git => 'https://github.com/roland19deschain/ZenCoreGraphicspec.git', :tag => spec.version }
+  spec.source           = { :git => 'https://github.com/roland19deschain/ZenCoreGraphics.git', :tag => spec.version }
   spec.requires_arc     = true
   spec.ios.deployment_target = '12.0'
   spec.osx.deployment_target = '10.10'
