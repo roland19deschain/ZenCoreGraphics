@@ -15,10 +15,10 @@ let package = Package(
 			name: "ZenCoreGraphics",
 			type: .static,
 			targets: ["ZenCoreGraphics"]
-		),
+		)
 	],
 	dependencies: [
-		 .package(url: "https://github.com/roland19deschain/ZenSwift.git", from: "1.8.1"),
+		.package(url: "https://github.com/roland19deschain/ZenSwift.git", from: "1.8.1"),
 	],
 	targets: [
 		.target(
