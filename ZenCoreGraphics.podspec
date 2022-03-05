@@ -16,5 +16,5 @@ ZenCoreGraphics is a collection of convenient and concise extensions and functio
   spec.tvospec.deployment_target = '12.0'
   spec.watchospec.deployment_target = '2.0'
   spec.source_files     = 'Sources/**/*{swift}'
-  spec.dependency 'ZenSwift', '~> 1.8'
+  spec.dependency 'ZenSwift'
 end
