@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'ZenCoreGraphics'
-  spec.version          = '1.2.3'
+  spec.version          = '2.0.0'
   spec.swift_version    = '5.0'
   spec.summary          = 'ZenCoreGraphics is a collection of extensions and functions for CoreGraphics framework.'
   spec.description      = <<-DESC
