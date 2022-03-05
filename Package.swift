@@ -25,11 +25,13 @@ let package = Package(
 			name: "ZenCoreGraphics",
 			dependencies: [
 				.product(name: "ZenSwift", package: "zenswift")
-			]
+			],
+			path: "Sources/"
 		),
 		.testTarget(
 			name: "ZenCoreGraphicsTests",
-			dependencies: ["ZenCoreGraphics"]
+			dependencies: ["ZenCoreGraphics"],
+			path: "Tests/"
 		)
 	],
 	swiftLanguageVersions: [.v5]
