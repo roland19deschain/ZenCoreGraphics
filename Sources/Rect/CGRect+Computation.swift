@@ -2,6 +2,16 @@ import CoreGraphics
 
 public extension CGRect {
 	
+	/// Return rectangle's area.
+	var area: CGFloat {
+		width * height
+	}
+	
+	/// Return rectangle's diagonal extent.
+	var diagonalExtent: CGFloat {
+		hypot(width, height)
+	}
+	
 	/**
 	 Creates a rectangle by subtracting the argument from the receiver.
 	 - parameter subtrahend: The rectangle to be subtracted from the receiver.
