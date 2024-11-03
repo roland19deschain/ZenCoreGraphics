@@ -1,14 +1,14 @@
-// swift-tools-version:5.5
+// swift-tools-version:6.0
 
 import PackageDescription
 
 let package = Package(
 	name: "ZenCoreGraphics",
 	platforms: [
-		.iOS(.v12),
-		.tvOS(.v12),
-		.macOS(.v10_10),
-		.watchOS(.v2)
+		.iOS(.v14),
+		.tvOS(.v14),
+		.macOS(.v10_13),
+		.watchOS(.v4)
 	],
 	products: [
 		.library(
@@ -34,5 +34,5 @@ let package = Package(
 			path: "Tests/"
 		)
 	],
-	swiftLanguageVersions: [.v5]
+	swiftLanguageModes: [.v6]
 )
